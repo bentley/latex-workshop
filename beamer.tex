@@ -1,0 +1,204 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+
+\title{Introduction to \LaTeX}
+\author{Anthony J. Bentley}
+
+\institute{UNM--IEEE}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{What is \TeX?}
+\begin{itemize}
+\pause\item{Invented by Donald Knuth in 1978}
+\pause\item{A typesetter---converts plain text to a printer-ready document}
+\pause\item{\LaTeX\ came later, a set of document macros instead of fine-grained typesetting}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Why use \LaTeX?}
+\begin{itemize}
+\pause\item{It makes things easier}
+\pause\item{Other people in industry and academia use it}
+\pause\item{It's available for free, legally}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{How to install}
+Lots of popular \LaTeX distributions.
+
+A popular version for Windows is MiK\TeX.
+
+Download it here:
+
+\url{http://miktex.org/portable/about}
+
+Then extract it to your flash drive, and run it anywhere
+\end{frame}
+
+\begin{frame}[fragile]{Demonstration}
+
+Double-click ``miktex-portable.cmd'',
+
+then right-click the taskbar icon and open a command prompt.
+
+\pause
+
+\begin{verbatim}
+\documentclass{article}
+
+\begin{document}
+Hello World!
+\end{document}
+\end{verbatim}
+
+\pause
+Save as a text file, then ``pdflatex filename.tex''
+
+\end{frame}
+
+\begin{frame}[fragile]{More basics}
+
+\begin{verbatim}
+This is printed text. % This is a comment, which is hidden.
+
+Spaces don't matter. These two lines look the same.
+
+Spaces don't  matter.   These    two     lines
+look
+the
+same.
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Formatting}
+
+\LaTeX\ provides sections, subsections, lists, tables\ldots
+
+\begin{verbatim}
+\section{Introduction}
+Welcome to English 219. I'm taking this for two reasons:
+\begin{itemize}
+\item{It's required.}
+\item{It's required.}
+\end{itemize}
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{Math}
+
+\ldots and math!
+
+\begin{verbatim}
+\begin{equation}
+1 + 1 = 2
+\end{equation}
+\end{verbatim}
+\begin{equation}
+1 + 1 = 2
+\end{equation}
+
+\pause
+\begin{verbatim}
+\begin{equation}
+e = mc^2
+\end{equation}
+\end{verbatim}
+\begin{equation}
+e = mc^2
+\end{equation}
+
+\end{frame}
+
+\begin{frame}[fragile]{Math}
+
+\begin{verbatim}
+\begin{equation}
+\cos \theta = \pm \sqrt{ 1 - \sin^2 \theta }
+\end{equation}
+\end{verbatim}
+\begin{equation}
+\cos \theta = \pm \sqrt{ 1 - \sin^2 \theta }
+\end{equation}
+
+\begin{verbatim}
+\begin{equation}
+x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{equation}
+\end{verbatim}
+\begin{equation}
+x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{equation}
+
+\end{frame}
+
+\begin{frame}[fragile]{Math}
+
+The ``amsmath'' package (from the American Mathematical Society) provides things like matrices.
+
+After \verb#\documentclass{article}#, put \verb#\usepackage{amsmath}#.
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{verbatim}
+\begin{equation}
+x = \frac{
+\left|\begin{matrix}
+e & b\\ f & d
+\end{matrix}\right|
+}{
+\left|\begin{matrix}
+a & b\\ c & d
+\end{matrix}\right|
+}
+\end{equation}
+\end{verbatim}
+\end{column}
+
+\begin{column}{0.3\textwidth}
+\begin{equation}
+x = \frac{
+\left|
+\begin{matrix}
+e & b\\
+f & d
+\end{matrix}
+\right|
+}{
+\left|
+\begin{matrix}
+a & b\\
+c & d
+\end{matrix}
+\right|
+}
+\end{equation}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Useful links}
+A good \LaTeX manual
+
+\url{http://www.eng.cam.ac.uk/help/tpl/textprocessing/ltxprimer-1.0.pdf}
+\pause
+\vspace{1em}
+
+Handwriting recognition
+
+\url{http://webdemo.visionobjects.com/equation.html}
+
+\url{http://detexify.kirelabs.org/classify.html}
+\pause
+
+\vspace{1em}
+These slides, and some more example papers:
+
+\url{https://github.com/bentley/latex-workshop/}
+\end{frame}
+\end{document}

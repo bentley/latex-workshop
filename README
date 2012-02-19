@@ -1,0 +1,10 @@
+First, install MikTeX from miktex.org.
+
+Type "pdflatex beamer.tex" in the terminal or command prompt
+to create beamer.pdf (the slides).
+
+Run these commands to create the example paper:
+pdflatex paper.tex
+bibtex paper
+pdflatex paper.tex
+pdflatex paper.tex
