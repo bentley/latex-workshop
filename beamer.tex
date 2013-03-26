@@ -1,5 +1,6 @@
 \documentclass{beamer}
-\usepackage{amsmath}
+\usepackage{amsmath} % for matrix example
+\usepackage{upquote} % so single quotes can be directly pasted
 
 \title{Introduction to \LaTeX}
 \author{Anthony J. Bentley}
@@ -21,7 +22,7 @@
 
 \begin{frame}{Why use \LaTeX?}
 \begin{itemize}
-\pause\item{It makes things easier}
+\pause\item{It makes things easier!}
 \pause\item{Other people in industry and academia use it}
 \pause\item{It's available for free, legally}
 \end{itemize}
@@ -29,22 +30,25 @@
 \end{frame}
 
 \begin{frame}{How to install}
-Lots of popular \LaTeX distributions.
+Lots of \LaTeX\ distributions over the years.
 
-A popular version for Windows is MiK\TeX.
+A popular version for Linux, Mac, and Windows is \TeX Live.
+
+You can install it per machine, or to a flash drive to run anywhere.
 
 Download it here:
 
-\url{http://miktex.org/portable/about}
+\url{https://www.tug.org/texlive/}
 
-Then extract it to your flash drive, and run it anywhere
 \end{frame}
 
-\begin{frame}[fragile]{Demonstration}
+\begin{frame}[fragile]{Web Interface}
 
-Double-click ``miktex-portable.cmd'',
+Share\LaTeX\ provides a friendly browser interface.
 
-then right-click the taskbar icon and open a command prompt.
+\url{https://www.sharelatex.com/}
+
+Enter your code and it will create a PDF.
 
 \pause
 
@@ -56,15 +60,12 @@ Hello World!
 \end{document}
 \end{verbatim}
 
-\pause
-Save as a text file, then ``pdflatex filename.tex''
-
 \end{frame}
 
 \begin{frame}[fragile]{More basics}
 
 \begin{verbatim}
-This is printed text. % This is a comment, which is hidden.
+This is printed text. % This is a comment, which is hidden
 
 Spaces don't matter. These two lines look the same.
 
@@ -96,21 +97,21 @@ Welcome to English 219. I'm taking this for two reasons:
 
 \begin{verbatim}
 \begin{equation}
-1 + 1 = 2
+e = mc^2
 \end{equation}
 \end{verbatim}
 \begin{equation}
-1 + 1 = 2
+e = mc^2
 \end{equation}
 
 \pause
 \begin{verbatim}
 \begin{equation}
-e = mc^2
+\cos \theta = \pm \sqrt{ 1 - \sin^2 \theta }
 \end{equation}
 \end{verbatim}
 \begin{equation}
-e = mc^2
+\cos \theta = \pm \sqrt{ 1 - \sin^2 \theta }
 \end{equation}
 
 \end{frame}
@@ -119,20 +120,20 @@ e = mc^2
 
 \begin{verbatim}
 \begin{equation}
-\cos \theta = \pm \sqrt{ 1 - \sin^2 \theta }
+x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
 \end{equation}
 \end{verbatim}
 \begin{equation}
-\cos \theta = \pm \sqrt{ 1 - \sin^2 \theta }
+x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
 \end{equation}
 
 \begin{verbatim}
 \begin{equation}
-x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\int_0^1 \sqrt{x} dx = \frac{2x^{3/2}}{3} + C
 \end{equation}
 \end{verbatim}
 \begin{equation}
-x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\int_0^1 \sqrt{x} dx = \frac{2x^{3/2}}{3} + C
 \end{equation}
 
 \end{frame}
@@ -183,7 +184,7 @@ c & d
 \end{frame}
 
 \begin{frame}{Useful links}
-A good \LaTeX manual
+A good \LaTeX\ manual
 
 \url{http://www.eng.cam.ac.uk/help/tpl/textprocessing/ltxprimer-1.0.pdf}
 \pause
@@ -194,6 +195,12 @@ Handwriting recognition
 \url{http://webdemo.visionobjects.com/equation.html}
 
 \url{http://detexify.kirelabs.org/classify.html}
+\pause
+
+\vspace{1em}
+Examples of attractive diagrams
+
+\url{http://texample.net}
 \pause
 
 \vspace{1em}
